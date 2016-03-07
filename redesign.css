@@ -20,8 +20,12 @@
     overflow: hidden;
 }
 .test-service__title{
-    padding-bottom: 19px;
-    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 0 32px;
+    margin: 0;
+    color: #65b0e6;
+    font: 25px/27px RobotoRegular;
+    font-weight: normal;
 }
 .test-service__list{
     display: flex;
