@@ -8,8 +8,8 @@
 
 /* ------------ testimonials ------------ */
 .testimonials{
-    max-width: 960px;
-    margin: 0 auto;
+    max-width: 920px;
+    margin: 0 auto 103px;
     overflow: hidden;
     text-align: center;
 }
@@ -25,6 +25,7 @@
     -ms-flex-align: flex-start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
+    margin-top: 16px;
 }
 .testimonials__sms{
     color: #195b8a;
@@ -40,18 +41,18 @@
     font-size: 16px;
     text-align: left;
     color: #195b8a;
-    line-height: 18px;
+    line-height: 20px;
 }
 .testimonials__pic{
-    width: 90px;
-    height: 90px;
-    margin-bottom: 10px;
+    width: 92px;
+    height: 92px;
+    margin-bottom: 37px;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
 }
 .testimonials__item p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .testimonials__item span{
     font-style: italic;
