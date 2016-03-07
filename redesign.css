@@ -7,5 +7,55 @@
 /* ------------ /test-service ------------ */
 
 /* ------------ testimonials ------------ */
+.testimonials{
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.testimonials__wrap{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-align: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+.testimonials__sms{
+    color: #195b8a;
+    text-decoration: underline;
+}
+.testimonials__sms:hover{
+    text-decoration: none;
+}
+.testimonials__item{
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    font-size: 16px;
+    text-align: left;
+    color: #195b8a;
+    line-height: 18px;
+}
+.testimonials__pic{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonials__item p {
+    margin-bottom: 10px;
+}
+.testimonials__item span{
+    font-style: italic;
+    color:#65b0e6;
+}
 
 /* ------------ /testimonials ------------ */
