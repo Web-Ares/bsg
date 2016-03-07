@@ -1,6 +1,31 @@
-/* ------------ advantages ------------ */
+/* ------------ features_adv ------------ */
+.features_adv .features-item-text {
+    color: #195b8a;
+}
+.features_adv .features-item-pic {
+    height: auto;
+    display: inline-block;
+    margin-right: 18px;
+    width: 55px;
+    line-height: 66px;
+    text-align: center;
+}
+.features_adv .features-item-elem {
+    display: inline-block;
+    vertical-align: top;
+    width: 315px;
+}
+.features_adv .feat-col + .feat-col {
+    padding-left: 133px;
+}
+.features_adv .features-item-text {
 
-/* ------------ /advantages ------------ */
+    padding-top: 13px;
+}
+.features_adv .feat-col {
+    padding-left: 16px;
+}
+/* ------------ /features_adv ------------ */
 
 /* ------------ test-service ------------ */
 
