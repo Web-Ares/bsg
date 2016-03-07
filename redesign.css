@@ -28,9 +28,190 @@
 /* ------------ /features_adv ------------ */
 
 /* ------------ test-service ------------ */
-
+.test-service{
+    margin-bottom: 60px;
+    padding: 60px 0 110px;
+    background-color: #f7fbfe;
+    text-align: center;
+}
+.test-service p{
+    font-size: 14px;
+    color: #65b0e6;
+    text-transform: uppercase;
+}
+.test-service__wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.test-service__title{
+    padding-bottom: 19px;
+    font-weight: 600;
+}
+.test-service__list{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-align: flex-start;
+    -ms-flex-align: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 50px;
+    padding-top: 55px;
+    counter-reset: list;
+}
+.test-service__list-item{
+    position: relative;
+    width: 190px;
+    margin: 0 20px 21px;
+    color: #195b8a;
+    font-size: 14px;
+    text-align: center;
+}
+.test-service__list-item:before{
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 0 auto 43px;
+    border: 2px solid #a4bfd3;
+    border-radius: 50px;
+    color: #a4bfd3;
+    font-size: 27px;
+    line-height: 46px;
+    background: url('img/test-service__bg.png') no-repeat center;
+    counter-increment: list 1;
+    content: counter(list);
+}
+.test-service__img{
+    display: block;
+    position: relative;
+    height: 158px;
+    margin: 15px 0 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.test-service__img:before{
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 173px;
+    background: url('img/test-service__bg.png') no-repeat center;
+    content: '';
+}
+.test-service__img_login{
+    background-image: url("img/icon-001.jpg");
+}
+.test-service__img_get-money{
+    background-image: url("img/icon-002.jpg");
+}
+.test-service__img_send{
+    background-image: url("img/icon-003.jpg");
+}
+.test-service__img_get-check{
+    background-image: url("img/icon-004.jpg");
+}
+.test-service__btn{
+    display: inline-block;
+    height: 59px;
+    margin: 0 auto 5px;
+    padding: 0 62px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #FF8C00;
+    color: #fff;
+    font: 21px/59px RobotoMedium;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(41, 86, 125, 0.2);
+    -moz-box-shadow: 0px 2px 1px 0px rgba(41, 86, 125, 0.2);
+    box-shadow: 0px 2px 1px 0px rgba(41, 86, 125, 0.2);
+}
+.test-service__btn:hover{
+    background-color: #e65100;
+    color: #fff;
+    text-decoration: none;
+}
 /* ------------ /test-service ------------ */
 
 /* ------------ testimonials ------------ */
-
+.testimonials{
+    max-width: 920px;
+    margin: 0 auto 63px;
+    overflow: hidden;
+    text-align: center;
+}
+.testimonials__wrap{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-align: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    margin-top: 16px;
+}
+.testimonials__sms{
+    color: #195b8a;
+    text-decoration: underline;
+}
+.testimonials__sms:hover{
+    text-decoration: none;
+}
+.testimonials__item{
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-align: left;
+    color: #195b8a;
+    line-height: 20px;
+}
+.testimonials__pic{
+    width: 92px;
+    height: 92px;
+    margin-bottom: 37px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonials__item p {
+    margin-bottom: 20px;
+}
+.testimonials__item span{
+    font-style: italic;
+    color:#65b0e6;
+}
 /* ------------ /testimonials ------------ */
+
+@media (min-width: 768px) {
+
+    /* ------------ test-service ------------ */
+    .test-service__list {
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+    /* ------------ /test-service ------------ */
+}
+@media (max-width: 800px) {
+    /* ------------ testimonials ------------ */
+    .testimonials__wrap{
+        padding: 10px 20px;
+    }
+    .testimonials__item{
+        width: 100%;
+    }
+    /* ------------ /testimonials ------------ */
+}
