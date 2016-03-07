@@ -169,7 +169,6 @@
     font-style: italic;
     color:#65b0e6;
 }
-
 /* ------------ /testimonials ------------ */
 
 @media (min-width: 768px) {
@@ -180,15 +179,14 @@
         justify-content: space-between;
     }
     /* ------------ /test-service ------------ */
-}/* ------------ /testimonials ------------ */
-
-@media screen and (max-width: 800px){
-
+}
+@media (max-width: 800px) {
+    /* ------------ testimonials ------------ */
     .testimonials__wrap{
         padding: 10px 20px;
     }
     .testimonials__item{
         width: 100%;
     }
-
+    /* ------------ /testimonials ------------ */
 }
