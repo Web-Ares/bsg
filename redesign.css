@@ -119,7 +119,7 @@
 /* ------------ testimonials ------------ */
 .testimonials{
     max-width: 920px;
-    margin: 0 auto 103px;
+    margin: 0 auto 63px;
     overflow: hidden;
     text-align: center;
 }
@@ -148,6 +148,7 @@
     display: inline-block;
     vertical-align: top;
     width: 260px;
+    margin-bottom: 40px;
     font-size: 16px;
     text-align: left;
     color: #195b8a;
@@ -179,4 +180,15 @@
         justify-content: space-between;
     }
     /* ------------ /test-service ------------ */
+}/* ------------ /testimonials ------------ */
+
+@media screen and (max-width: 800px){
+
+    .testimonials__wrap{
+        padding: 10px 20px;
+    }
+    .testimonials__item{
+        width: 100%;
+    }
+
 }
