@@ -484,22 +484,105 @@ margin-bottom: 20px;
     margin: 0 auto;
     text-align: center;
 }
+.clients__item{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: left;
+    color: #195b8a;
+    line-height: 20px;
+}
+.clients__pic{
+    display: inline-block;
+    vertical-align: middle;
+    width: 92px;
+    height: 92px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.clients__item p {
+    margin-bottom: 20px;
+}
+.clients__item span{
+    font-size: 18px;
+    color:#65b0e6;
+}
+.clients__description{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+}
 /*-----/clients-----*/
 
 /*-----our-service-----*/
 .our-service{
     padding-top: 20px;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background:no-repeat center bottom;
+    background-size: cover;
     text-align: center;
 }
 .our-service__wrap{
     padding: 0 10px 20px;
-    max-width: 920px;
+    max-width: 922px;
     margin: 0 auto;
 }
 .our-service .site__title{
     color: #fff;
+}
+.our-service__wrap{
+    text-align: center;
+}
+.our-service__wrap:after{
+    display: inline-block;
+    width: 100%;
+    content: "";
+}
+.our-service__item{
+    display: block;
+    vertical-align: top;
+    height: 353px;
+    margin-bottom: 13px;
+    text-align: left;
+}
+.our-service__item>div{
+    height: 109px;
+    width: 100%;
+    margin-bottom: 13px;
+    border-radius: 5px;
+    background: #fff;
+}
+.our-service__item_one{
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+}
+.our-service__name{
+    position: relative;
+    top: 50%;
+    padding: 15px;
+    transform: translateY(-50%);
+}
+.our-service__name div{
+    width: 24%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    text-align: center;
+}
+.our-service__name>span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 67%;
+    color:#000;
+    font-size: 14px;
+}
+.our-service__name-big{
+    font-size: 28px;
+}
+.our-service__name-block{
+    display: block;
 }
 /*-----/our-service-----*/
 
@@ -764,6 +847,28 @@ margin-bottom: 20px;
         margin-right: 3%;
     }
     /*-----/write-----*/
+
+    /*-----our-service-----*/
+    .our-service{
+        padding-top: 50px;
+    }
+    .our-service__wrap{
+        padding-bottom: 50px;
+        text-align: justify;
+    }
+    .our-service__item>div{
+    }
+    .our-service__item{
+        width: 34%;
+        display: inline-block;
+    }
+    .our-service__item_one {
+         width: 29%;
+     }
+    .our-service__name {
+        padding-left: 10px;
+    }
+    /*-----/our-service-----*/
 }
 @media (min-width: 920px) {
 
