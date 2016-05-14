@@ -1,5 +1,18 @@
 *{-moz-box-sizing:border-box;box-sizing:border-box;}
 .site-container {padding: 157px 0 0 0;}
+
+/* --------------- placeholder --------------- */
+.write ::-webkit-input-placeholder {
+    color: #f0f0f0;
+}
+.write :-moz-placeholder {
+    color: #f0f0f0;
+}
+.write .placeholder {
+    color: #f0f0f0;
+}
+/* --------------- /placeholder --------------- */
+
 .site-footer {
     margin: 0 auto 0;
 }
@@ -51,7 +64,7 @@
     height: 100%;
     margin: 0 auto;
 }
-.hlr-promo__wrap p{
+.hlr-promo__wrap h3{
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -65,6 +78,8 @@
 /*-----/hlr-promo-----*/
 
 .hlp-lookup{
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 20px 10px;
 }
 .hlp-lookup__content{
@@ -243,6 +258,7 @@
     font-size: 16px;
     border-radius: 5px;
     background: #e65100;
+    line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
     transition: opacity .3s ease;
@@ -251,6 +267,11 @@
 .btn_2{
     margin-top: 15px;
 }
+.btn_3{
+    height: 55px;
+    padding: 5px 40px;
+    border: none;
+}
 .btn:hover{
     opacity: .7;
     color: #fff;
@@ -258,6 +279,229 @@
 }
 /*-----/btn-----*/
 
+/*-----sms-promo-----*/
+.sms-promo{
+    width: 100%;
+    height: 552px;
+    background: #65b0e6 url("pic/sms-promo-bg.png") no-repeat center;
+    font-size: 20px;
+    line-height: 30px;
+    color:#fff;
+}
+.sms-promo__wrap{
+    position: relative;
+    max-width: 920px;
+    margin: 0 auto;
+    height: 552px;
+    padding: 20px 10px;
+    background: url("pic/sms-promo-tv.png") no-repeat bottom;
+    background-size: 275px 177px;
+    background-position: 50% 100%;
+
+}
+.sms-promo__wrap h3{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.sms-promo__wrap p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color:#1b5d8b;
+    line-height: 20px;
+}
+.sms-promo__title{
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -1.6px;
+}
+/*-----/sms-promo-----*/
+
+/*-----hlr-what-----*/
+.sms-what{
+    min-height: 135px;
+    background: #65b0e6;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+}
+.sms-what__wrap{
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.sms-what__wrap>div{
+    text-align: left;
+}
+.sms-what .hlr-link{
+    color: #fff;
+}
+.sms-what .hlr-link:hover{
+    color: #fff;
+}
+.sms-what .site__title{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 17px;
+    color: #fff;
+}
+.sms-what__pic{
+    float: left;
+    margin: 0 15px 10px 0;
+}
+/*-----/hlr-what-----*/
+
+/*-----sms-best-----*/
+.sms-best{
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.sms-best__item{
+margin-bottom: 20px;
+}
+.sms-best__pic{
+    width: 72px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.sms-best__description{
+    width: calc(100% - 100px);
+    display: inline-block;
+    vertical-align: middle;
+}
+/*-----/sms-best-----*/
+
+/*-----mass-mailing-----*/
+.mass-mailing{
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mass-mailing p{
+    text-align: left;
+}
+.mass-mailing__item{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border: 1px solid #65b0e6;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #195b8a;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+}
+.mass-mailing__item:hover{
+    color: #195b8a;
+    text-decoration: none;
+}
+.mass-mailing__name{
+    min-height: 80px;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #717171;
+}
+.mass-mailing__wrap{
+    margin-top: 30px;
+}
+.mass-mailing__name div{
+    width: 24%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    text-align: center;
+}
+.mass-mailing__name h3{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    color:#65b0e6;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.mass-mailing__hover{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    bottom: 0;
+    height: 210px;
+    width: 100%;
+    left: 0;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    background: rgba(75, 76, 76, 0.97);
+    color: #fff;
+    transition: opacity .3s ease, visibility .3s ease;
+    -webkit-transition: opacity .3s ease, visibility .3s ease;
+}
+.mass-mailing__item:hover .mass-mailing__hover{
+    opacity: 1;
+    visibility: visible;
+}
+/*-----write-----*/
+.write{
+    background: #eff7fc;
+}
+.write__wrap{
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
+    color: #565656;
+}
+.write__wrap h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.write__wrap input{
+    height: 56px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid #dedede;
+    background: #fff;
+    color: #565656;
+}
+/*-----/write-----*/
+
+/*-----clients-----*/
+.clients{
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*-----/clients-----*/
+
+/*-----our-service-----*/
+.our-service{
+    padding-top: 20px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.our-service__wrap{
+    padding: 0 10px 20px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.our-service .site__title{
+    color: #fff;
+}
+/*-----/our-service-----*/
 
 @media (min-width: 767px) {
 
@@ -429,6 +673,97 @@
         margin-bottom: 22px;
     }
     /*-----/through-----*/
+
+    /*-----hlr-promo-----*/
+    .sms-promo {
+        font-size: 24px;
+    }
+    .sms-promo__title{
+        font-size: 58px;
+        line-height: 65px;
+        margin-bottom: 10px;
+    }
+    .sms-promo__wrap{
+        padding-top: 74px;
+        background-size: 400px 316px;
+        background-position: 100% 100%;
+    }
+    .sms-promo__wrap p{
+        width: 52%;
+        font-size: 16px;
+    }
+    /*-----/hlr-promo-----*/
+
+    /*-----hlr-what-----*/
+    .sms-what{
+        padding: 35px 10px;
+    }
+    .sms-what__pic {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+        width: 64px;
+        margin: 0 33px 10px 0;
+    }
+    .sms-what__wrap>div{
+        display: inline-block;
+        vertical-align: middle;
+        width: 80%;
+    }
+    /*-----/hlr-what-----*/
+
+    /*-----sms-best-----*/
+    .sms-best {
+        padding: 80px 10px;
+    }
+    .sms-best__item{
+        display: inline-block;
+        vertical-align: top;
+        width: 47%;
+        margin-right: 5%;
+        margin-bottom: 60px;
+    }
+    .sms-best .sms-best__item:nth-child(even){
+        margin-right: 0;
+    }
+    /*-----/sms-best-----*/
+
+    /*-----mass-mailing-----*/
+    .mass-mailing{
+        padding: 50px 10px;
+    }
+    .mass-mailing__item{
+        display: inline-block;
+        vertical-align: top;
+        width: 47%;
+        margin-right: 5%;
+        margin-bottom: 60px;
+        overflow: hidden;
+    }
+    .mass-mailing__wrap .mass-mailing__item:nth-child(even){
+        margin-right: 0;
+    }
+    .mass-mailing__wrap{
+        margin-top: 60px;
+    }
+     /*-----/mass-mailing-----*/
+
+    /*-----write-----*/
+    .write__wrap{
+        padding: 40px 10px;
+    }
+    .write__wrap h2{
+        margin-bottom: 40px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .write__wrap input {
+        display: inline-block;
+        vertical-align: top;
+        width: 544px;
+        margin-right: 3%;
+    }
+    /*-----/write-----*/
 }
 @media (min-width: 920px) {
 
@@ -481,7 +816,7 @@
     /*-----who-needs-----*/
     .who-needs__wrap{
         max-width: 1186px;
-        padding: 60px 26% 46px 136px;
+        padding: 60px 350px 46px 136px;
     }
     /*-----/who-needs-----*/
 
@@ -559,6 +894,18 @@
         left: 3px;
     }
     /*-----/any-questions-----*/
+
+    /*-----hlr-what-----*/
+    .sms-what {
+        padding: 41px 0;
+    }
+    /*-----/hlr-what-----*/
+
+    /*-----sms-promo-----*/
+    .sms-promo__wrap {
+        background-size: 492px 378px;
+    }
+    /*-----/sms-promo-----*/
 
 }
 @media screen and (max-width: 880px){
