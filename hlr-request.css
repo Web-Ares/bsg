@@ -1,0 +1,569 @@
+*{-moz-box-sizing:border-box;box-sizing:border-box;}
+.site-container {padding: 157px 0 0 0;}
+.site-footer {
+    margin: 0 auto 0;
+}
+
+.site-content {
+    min-width: 320px;
+    color: #195b8a;
+    font-size: 16px;
+    line-height: 24px;
+}
+.site__title{
+    margin-bottom: 10px;
+    color: #65b0e6;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hlr-link{
+    color: #195b8a;
+    font-family: RobotoRegular, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+.hlr-link:hover{
+    text-decoration: underline;
+}
+/*-----hlr-promo-----*/
+.hlr-promo{
+    width: 100%;
+    height: 376px;
+    background: #3f5562 url("pic/hlr-promo-bg.jpg") no-repeat center;
+    font-size: 20px;
+    line-height: 30px;
+    color:#fff;
+}
+.hlr-promo__wrap{
+    position: relative;
+    height: 376px;
+    padding: 20px 10px;
+    background: url("pic/hlr-promo-hand.png") no-repeat bottom;
+    background-size: 275px 177px;
+    background-position: 100% 100%;
+
+}
+.hlr-promo__wrap div{
+    position: relative;
+    max-width: 920px;
+    height: 100%;
+    margin: 0 auto;
+}
+.hlr-promo__wrap p{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.hlr-promo__title{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -1.6px;
+}
+/*-----/hlr-promo-----*/
+
+.hlp-lookup{
+    padding: 20px 10px;
+}
+.hlp-lookup__content{
+    font-size: 16px;
+    line-height: 24px;
+    color: #195b8a;
+}
+.hlp-lookup__pic{
+    width: 300px;
+    margin: 0 auto;
+}
+.hlp-lookup__pic img{
+    width: 100%;
+    height: auto;
+}
+
+/*-----service-----*/
+.service{
+    background: #f4f9fd;
+}
+.service__wrap{
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.service__item{
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #195b8a;
+}
+.service__item span{
+    display: block;
+    margin-bottom: 22px;
+    font-size: 24px;
+    font-family: 'RobotoBold', sans-serif;
+    font-weight: 700;
+}
+/*-----/service-----*/
+
+/*-----hlr-what-----*/
+.hlr-what{
+    padding: 20px 10px;
+    max-width: 920px;
+    min-height: 135px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 18px;
+}
+.hlr-what .site__title{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 17px;
+}
+.hlr-what__pic{
+    float: left;
+    margin: 0 15px 10px 0;
+}
+/*-----/hlr-what-----*/
+
+/*-----who-needs-----*/
+.who-needs{
+    min-height: 135px;
+    overflow: hidden;
+    background:#f4f9fd;
+}
+.who-needs__wrap{
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+    background-size: 0;
+}
+.who-needs ul{
+    margin-left: 21px;
+    line-height: 20px;
+    font-size: 16px;
+}
+.who-needs ul li{
+    margin-bottom: 11px;
+}
+.who-needs__title{
+    font-size: 20px;
+    line-height: 21px;
+    margin-bottom: 13px;
+}
+/*-----/who-needs-----*/
+
+/*-----register-----*/
+.register{
+
+}
+.register__wrap{
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.register__pic{
+
+}
+.register__pic{
+    width: 170px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+/*-----/register-----*/
+
+/*-----relive-----*/
+.relive{
+    background: #f4f9fd;
+}
+.relive__wrap{
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+    min-height: 260px;
+}
+.relive__pic{
+
+}
+.relive__pic{
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+/*-----/relive-----*/
+
+/*-----any-questions-----*/
+.any-questions{
+    background: #65b0e6;
+    color: #fff;
+    font-size: 15px;
+}
+.any-questions__wrap{
+    position: relative;
+    padding: 20px 10px 20px 52px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.any-questions__wrap:before{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    background: url("img/any-questions.png") no-repeat center;
+    background-size: contain;
+    content: "";
+}
+/*-----/any-questions-----*/
+
+/*-----through-----*/
+.through{
+    position: relative;
+    padding: 20px 10px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.through__item{
+    margin-bottom: 30px;
+}
+.through__pic{
+    height: 60px;
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+/*-----/through-----*/
+
+/*-----btn-----*/
+.btn{
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #e65100;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+.btn_2{
+    margin-top: 15px;
+}
+.btn:hover{
+    opacity: .7;
+    color: #fff;
+    text-decoration: none;
+}
+/*-----/btn-----*/
+
+
+@media (min-width: 767px) {
+
+    body {
+        min-width: inherit;
+    }
+    /*-----site-----*/
+    .site-content{
+        padding: 0;
+    }
+    .site__title{
+        margin-bottom: 26px;
+    }
+    /*-----/site-----*/
+
+    /*-----hlr-promo-----*/
+    .hlr-promo {
+        font-size: 24px;
+    }
+    .hlr-promo__title{
+        width: 60%;
+        font-size: 58px;
+        line-height: 65px;
+        margin-bottom: 10px;
+    }
+    .hlr-promo__wrap{
+        padding-top: 74px;
+        background-size: 549px 354px;
+        background-position: 196% 100%;
+    }
+    .hlr-promo__wrap p{
+        width: 60%;
+    }
+    .hlr-promo__wrap div{
+
+    }
+    /*-----/hlr-promo-----*/
+
+    /*-----/hlr-promo-----*/
+    .btn {
+        display: inline-block;
+        padding: 14px 18px;
+        color: #fff;
+        font-size: 21px;
+    }
+    .btn_1{
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+    }
+    .btn_2{
+        margin-top: 32px;
+        padding: 17px 47px;
+    }
+    /*-----/btn-----*/
+
+    /*-----hlr-what-----*/
+    .hlr-what{
+        padding: 35px 10px;
+    }
+    .hlr-what__pic {
+        margin: 0 33px 10px 0;
+    }
+    /*-----/hlr-what-----*/
+
+    /*-----hlp-lookup-----*/
+    .hlp-lookup{
+        padding: 60px 10px 40px;
+    }
+    .hlp-lookup__pic{
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        margin: 0;
+    }
+    .hlp-lookup__content{
+        width: 59%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    /*-----/hlp-lookup-----*/
+
+    .service__wrap{
+        margin-top: -23px;
+        padding-top: 58px;
+        text-align: justify;
+    }
+    .service__wrap:after{
+        display: inline-block;
+        width: 100%;
+        content: "";
+    }
+    .service__item{
+        width: 19%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        line-height: 18px;
+    }
+    /*-----/service-----*/
+
+    /*-----who-needs-----*/
+    .who-needs__wrap{
+        padding: 60px 44% 40px 10px;
+        background-size: 332px 391px;
+        background: no-repeat center right;
+    }
+    /*-----/who-needs-----*/
+
+    /*-----register-----*/
+    .register__wrap {
+        position: relative;
+        padding: 60px 10px 40px 200px;
+    }
+    .register__pic{
+        position: absolute;
+        top: 60px;
+        left: 10px;
+    }
+    /*-----/register-----*/
+
+    /*-----relive-----*/
+    .relive__wrap {
+        position: relative;
+        padding: 60px 200px 40px 10px;
+    }
+    .relive__pic{
+        position: absolute;
+        top: 35px;
+        right: 10px;
+    }
+    /*-----/relive-----*/
+
+    /*-----any-questions-----*/
+    .any-questions__wrap {
+        min-height: 100px;
+        padding: 41px 10px 44px 97px;
+        line-height: 19px;
+        letter-spacing: 1px;
+    }
+    .any-questions__wrap:before {
+        top: 50%;
+        width: 64px;
+        height: 64px;
+        transform: translateY(-50%);
+    }
+    /*-----/any-questions-----*/
+
+    /*-----through-----*/
+    .through{
+        padding: 60px 10px 40px;
+    }
+    .through__wrap{
+        text-align: justify;
+    }
+    .through__wrap:after{
+        display: inline-block;
+        width: 100%;
+        content: '';
+    }
+    .through__item{
+        width: 29%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+    .through__pic{
+        height: 120px;
+        margin-bottom: 22px;
+    }
+    /*-----/through-----*/
+}
+@media (min-width: 920px) {
+
+    /*-----/hlr-promo-----*/
+    .hlr-promo__wrap{
+        max-width: 1500px;
+        margin: 0 auto;
+        background-position: 125% 100%;
+    }
+    /*-----/hlr-promo-----*/
+
+    /*-----register-----*/
+    .register__wrap {
+        padding: 57px 10px 40px 285px;
+    }
+    .register__pic{
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        width: 224px;
+    }
+    /*-----/register-----*/
+
+    /*-----relive-----*/
+    .relive__wrap {
+        min-height: 332px;
+        padding: 60px 300px 40px 10px;
+    }
+    .relive__pic{
+        position: absolute;
+        top: 60px;
+        width: 164px;
+    }
+    /*-----/relive-----*/
+}
+@media (min-width: 1200px) {
+
+    /*-----hlr-promo__wrap-----*/
+    .hlr-promo__wrap {
+        background-position: 861px 100%;
+    }
+    .hlr-promo__title {
+        font-size: 65px;
+    }
+    .hlr-promo__wrap p {
+        width: 69%;
+    }
+    /*-----/hlr-promo__wrap-----*/
+
+    /*-----who-needs-----*/
+    .who-needs__wrap{
+        max-width: 1186px;
+        padding: 60px 26% 46px 136px;
+    }
+    /*-----/who-needs-----*/
+
+    /*-----btn-----*/
+    .btn_1 {
+        bottom: 28px;
+        left: 1px;
+    }
+    /*-----/btn-----*/
+
+    /*-----hlp-lookup-----*/
+    .hlp-lookup{
+        padding: 60px 10px 0;
+    }
+    .hlp-lookup__pic {
+        width: 549px;
+        margin-left: -101px;
+        margin-top: -19px;
+    }
+    .hlp-lookup__content {
+        width: 52%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: -12px;
+    }
+    /*-----/hlp-lookup-----*/
+
+    /*-----service-----*/
+    .service__wrap {
+        margin-top: -23px;
+        padding: 57px 45px 9px 0;
+    }
+    /*-----/service-----*/
+
+    /*-----hlr-what-----*/
+    .hlr-what {
+        padding: 41px 0;
+    }
+    /*-----/hlr-what-----*/
+
+    /*-----/hlr-what-----*/
+    .register__pic {
+        left: 2px;
+    }
+    .register .site__title{
+        margin-bottom: 32px;
+    }
+    /*-----/hlr-what-----*/
+
+    /*-----relive-----*/
+    .relive .site__title{
+        margin-bottom: 32px;
+    }
+
+    .relive__wrap {
+        min-height: 350px;
+        padding: 60px 380px 40px 0;
+    }
+    .relive__pic {
+        right: 142px;
+    }
+    /*-----/relive-----*/
+
+    /*-----through-----*/
+    .through {
+        padding: 58px 0 0;
+    }
+    .through .site__title {
+        margin-bottom: 34px;
+    }
+    /*-----/through-----*/
+
+    /*-----any-questions-----*/
+    .any-questions__wrap:before {
+        left: 3px;
+    }
+    /*-----/any-questions-----*/
+
+}
+@media screen and (max-width: 880px){
+    .site-footer {
+        margin: 0 auto 0;
+        height: auto;
+    }
+}
