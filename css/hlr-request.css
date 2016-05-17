@@ -1,5 +1,4 @@
 *{-moz-box-sizing:border-box;box-sizing:border-box;}
-.site-container {padding: 157px 0 0 0;}
 
 /* --------------- placeholder --------------- */
 .write ::-webkit-input-placeholder {
@@ -13,12 +12,13 @@
 }
 /* --------------- /placeholder --------------- */
 
+/*-----site-----*/
 .site-footer {
     margin: 0 auto 0;
 }
-
 .site-content {
     min-width: 320px;
+    padding: 157px 0 0 0;
     color: #195b8a;
     font-size: 16px;
     line-height: 24px;
@@ -31,17 +31,17 @@
     font-weight: 600;
     text-transform: uppercase;
 }
+/*-----/site-----*/
+
+/*-----hlr-promo-----*/
 .hlr-link{
     color: #195b8a;
-    font-family: RobotoRegular, sans-serif;
-    font-weight: 600;
     text-decoration: none;
 }
 .hlr-link:hover{
     color: #195b8a;
     text-decoration: underline;
 }
-/*-----hlr-promo-----*/
 .hlr-promo{
     width: 100%;
     height: 376px;
@@ -65,6 +65,7 @@
     margin: 0 auto;
 }
 .hlr-promo__wrap h3{
+    width: 60%;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -75,12 +76,13 @@
     font-weight: 600;
     letter-spacing: -1.6px;
 }
-/*-----/hlr-promo-----*/
-
 .hlp-lookup{
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 20px 10px 40px;
+}
+.hlp-lookup .site__title{
+    margin-bottom: 10px;
 }
 .hlp-lookup__content{
     font-size: 16px;
@@ -95,13 +97,14 @@
     width: 100%;
     height: auto;
 }
+/*-----/hlr-promo-----*/
 
 /*-----service-----*/
 .service{
     background: #f4f9fd;
 }
 .service__wrap{
-    padding: 20px 10px;
+    padding: 40px 10px 20px;
     max-width: 920px;
     margin: 0 auto;
 }
@@ -114,14 +117,13 @@
     display: block;
     margin-bottom: 22px;
     font-size: 24px;
-    font-family: 'RobotoBold', sans-serif;
     font-weight: 700;
 }
 /*-----/service-----*/
 
 /*-----hlr-what-----*/
 .hlr-what{
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     min-height: 135px;
     margin: 0 auto;
@@ -147,7 +149,7 @@
     background:#f4f9fd;
 }
 .who-needs__wrap{
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     margin: 0 auto;
     background-size: 0;
@@ -172,7 +174,7 @@
 
 }
 .register__wrap{
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     margin: 0 auto;
 }
@@ -192,7 +194,7 @@
     background: #f4f9fd;
 }
 .relive__wrap{
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     margin: 0 auto;
     min-height: 260px;
@@ -235,18 +237,19 @@
 /*-----through-----*/
 .through{
     position: relative;
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     margin: 0 auto;
 }
 .through__item{
     margin-bottom: 30px;
+    text-align: center;
 }
 .through__pic{
     height: 60px;
     width: auto;
     display: block;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
 }
 /*-----/through-----*/
 
@@ -282,6 +285,7 @@
 }
 .btn_5{
     background: #fff;
+    margin-top: 15px;
     color: #5a9dd7;
 }
 .btn_6{
@@ -305,7 +309,7 @@
 .sms-promo{
     width: 100%;
     height: 552px;
-    background: #65b0e6 url("../pic/sms-promo-bg.png") no-repeat center;
+    background: #65b0e6 no-repeat center;
     font-size: 20px;
     line-height: 30px;
     color:#fff;
@@ -316,7 +320,7 @@
     margin: 0 auto;
     height: 552px;
     padding: 20px 10px;
-    background: url("../pic/sms-promo-tv.png") no-repeat bottom;
+    background-repeat: no-repeat;
     background-size: 275px 177px;
     background-position: 50% 100%;
 
@@ -350,7 +354,7 @@
     text-align: center;
 }
 .sms-what__wrap{
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     margin: 0 auto;
 }
@@ -378,12 +382,12 @@
 
 /*-----sms-best-----*/
 .sms-best{
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     margin: 0 auto;
 }
 .sms-best__item{
-margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .sms-best__pic{
     width: 72px;
@@ -400,7 +404,7 @@ margin-bottom: 20px;
 
 /*-----mass-mailing-----*/
 .mass-mailing{
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     margin: 0 auto;
     text-align: center;
@@ -411,8 +415,6 @@ margin-bottom: 20px;
 .mass-mailing__item{
     display: block;
     position: relative;
-    overflow: hidden;
-    height: 303px;
     padding: 20px 10px;
     margin-bottom: 20px;
     border: 1px solid #65b0e6;
@@ -456,7 +458,7 @@ margin-bottom: 20px;
     visibility: hidden;
     opacity: 0;
     bottom: 0;
-    height: 210px;
+    height: 203px;
     width: 100%;
     left: 0;
     padding: 10px;
@@ -466,16 +468,14 @@ margin-bottom: 20px;
     transition: opacity .3s ease, visibility .3s ease;
     -webkit-transition: opacity .3s ease, visibility .3s ease;
 }
-.mass-mailing__item:hover .mass-mailing__hover{
-    opacity: 1;
-    visibility: visible;
-}
+/*-----/mass-mailing-----*/
+
 /*-----write-----*/
 .write{
     background: #eff7fc;
 }
 .write__wrap{
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     margin: 0 auto;
     text-align: center;
@@ -508,7 +508,7 @@ margin-bottom: 20px;
 }
 .clients__wrap{
     position: relative;
-    padding: 20px 25px;
+    padding: 40px 30px;
 }
 .clients__item{
     display: inline-block;
@@ -562,6 +562,16 @@ margin-bottom: 20px;
 }
 /*-----/clients-----*/
 
+/*-----our-service-----*/
+.our-service{
+    padding-top: 40px;
+    text-align: center;
+}
+.our-service__wrap{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 .our-service .site__title{
     color: #fff;
 }
@@ -652,7 +662,6 @@ margin-bottom: 20px;
 /*-----get-promo-----*/
 .get-promo{
     width: 100%;
-    height: 376px;
     background: #0092D5;
     font-size: 20px;
     line-height: 30px;
@@ -660,11 +669,11 @@ margin-bottom: 20px;
 }
 .get-promo__wrap{
     position: relative;
-    height: 376px;
+    height: 400px;
     padding: 20px 10px;
     background: no-repeat bottom;
-    background-size: 275px 177px;
-    background-position: 100% 100%;
+    background-size: 336px 187px;
+    background-position: 50% 100%;
 }
 .get-promo__wrap div{
     position: relative;
@@ -686,9 +695,8 @@ margin-bottom: 20px;
 /*-----/get-promo-----*/
 
 /*-----need-gateway-----*/
-
 .need-gateway{
-    padding: 20px 20px;
+    padding: 40px 10px 0;
     max-width: 920px;
     margin: 0 auto;
     text-align: justify;
@@ -732,7 +740,7 @@ margin-bottom: 20px;
     display: inline-block;
     width: 114px;
     height: 34px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     border-bottom: 2px solid #ebebeb;
 }
 .need-gateway__branch span{
@@ -754,48 +762,39 @@ margin-bottom: 20px;
 .need-gateway__advertising .need-gateway__branch{
     border-left: 2px solid #ebebeb;
 }
+.need-gateway__branch:after,
 .need-gateway__branch:before{
     position: absolute;
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     box-shadow: 0 0 0 2px #ebebeb;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    background: #f2a981;
-    content: "";
-}
-.need-gateway__branch:after{
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    box-shadow: 0 0 0 2px #ebebeb;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     border-radius: 50%;
     background: #f2a981;
     content: "";
 }
 .need-gateway__service .need-gateway__branch:before{
-    top: -13px;
-    right: -7px;
+    top: -11px;
+    right: -6px;
 }
 .need-gateway__service .need-gateway__branch:after{
-    bottom: -28px;
-    left: -6px;
+    bottom: -19px;
+    left: -4px;
 }
 .need-gateway__advertising .need-gateway__branch:before{
-    top: -13px;
-    left: -7px;
+    top: -11px;
+    left: -6px;
 }
 .need-gateway__advertising .need-gateway__branch:after{
-    bottom: -28px;
-    right: -6px;
+    bottom: -19px;
+    right: -4px;
 }
 .need-gateway__branch-down{
     position: relative;
     display: inline-block;
     width: 114px;
     height: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border-bottom: 2px solid #ebebeb;
 }
 .need-gateway__service .need-gateway__branch-down{
@@ -807,16 +806,16 @@ margin-bottom: 20px;
 .need-gateway__branch-down:before{
     position: absolute;
     width: 2px;
-    height: 644px;
+    height: 640px;
     background: #ebebeb;
     content: "";
 }
 .need-gateway__branch-down:after{
     position: absolute;
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     box-shadow: 0 0 0 2px #ebebeb;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     border-radius: 50%;
     background: #f2a981;
     content: "";
@@ -826,16 +825,16 @@ margin-bottom: 20px;
     right: 0;
 }
 .need-gateway__service .need-gateway__branch-down:after{
-    bottom: 11px;
-    left: -7px;
+    bottom: 7px;
+    left: -5px;
 }
 .need-gateway__advertising .need-gateway__branch-down:before{
     top: 13px;
     left: 0;
 }
 .need-gateway__advertising .need-gateway__branch-down:after{
-    bottom: 11px;
-    right: -7px;
+    bottom: 7px;
+    right: -5px;
 }
 .need-gateway__item{
     line-height: 22px;
@@ -879,25 +878,26 @@ margin-bottom: 20px;
 .need-gateway__description span{
     display: block;
     color: #195b8a;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 19px;
 }
 /*-----/need-gateway-----*/
 
 /*-----advantages-----*/
 .advantages{
-    padding-top: 20px;
+    padding-top: 40px;
     background: #65b0e6;
     color: #fff;
 }
 .advantages__wrap{
     position: relative;
-    padding: 0 10px 20px;
+    padding: 0 10px 40px;
     max-width: 922px;
-    margin: 20px auto 0;
+    margin: 0 auto;
 }
 .advantages__wrap:after{
     position: absolute;
-    bottom: -20px;
+    bottom: -18px;
     border: solid transparent;
     content: " ";
     height: 0;
@@ -909,6 +909,7 @@ margin-bottom: 20px;
     left: 100px;
 }
 .advantages .site__title{
+    margin-bottom: 17px;
     text-transform: inherit;
     color: #fff;
 }
@@ -918,11 +919,14 @@ margin-bottom: 20px;
 .advantages .hlr-link:hover{
     color: #fff;
 }
+.advantages p{
+    line-height: 20px;
+}
 /*-----advantages-----*/
 
 /*-----advantages-description-----*/
 .advantages-description{
-    padding: 25px 0;
+    padding: 20px 0 40px;
     background:no-repeat center bottom;
     background-size: cover;
     color: #fff;
@@ -952,8 +956,8 @@ margin-bottom: 20px;
 
 /*-----platform-----*/
 .platform {
-    padding: 20px 10px 149px;
-    max-width: 1060px;
+    padding: 40px 10px 160px;
+    max-width: 1101px;
     margin: 0 auto;
     background: no-repeat;
     background-size: 240px 280px;
@@ -961,17 +965,21 @@ margin-bottom: 20px;
 }
 .platform p{
     font-size: 16px;
+    line-height: 20px;
+}
+.platform .site__title{
+    margin-bottom: 10px;
 }
 /*-----/platform-----*/
 
 /*-----test-delivery-----*/
 .test-delivery{
-    padding-top: 20px;
+    padding-top: 40px;
     position: relative;
     background: #f4f9fd;
 }
 .test-delivery__wrap{
-    padding: 20px 10px;
+    padding: 0 10px 2px;
     max-width: 920px;
     margin: 0 auto;
 }
@@ -988,14 +996,14 @@ margin-bottom: 20px;
     display: inline-block;
     vertical-align: top;
     margin-bottom: 30px;
-    text-align: left;
+    text-align: center;
 }
 .test-delivery__pic{
     display: block;
     height: 90px;
     width: 90px;
-    margin-bottom: 10px;
-    border: 1px solid #a9d3f1;
+    margin: 0 auto 10px;
+    border: 1px solid #65b0e6;
     border-radius: 50%;
     background: no-repeat center;
 }
@@ -1006,7 +1014,7 @@ margin-bottom: 20px;
 
 /*-----help-stage-----*/
 .help-stage{
-    padding: 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     min-height: 135px;
     margin: 0 auto;
@@ -1028,7 +1036,7 @@ margin-bottom: 20px;
 }
 .check-in__wrap{
     position: relative;
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px;
     max-width: 920px;
     margin: 0 auto;
     text-align: center;
@@ -1041,23 +1049,16 @@ margin-bottom: 20px;
 }
 .check-in__wrap .btn{
     vertical-align: middle;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0 30px;
 }
 /*-----/check-in-----*/
-
-
 
 @media (min-width: 767px) {
 
     body {
         min-width: inherit;
     }
+
     /*-----site-----*/
-    .site-content{
-        padding: 0;
-    }
     .site__title{
         margin-bottom: 26px;
     }
@@ -1099,7 +1100,7 @@ margin-bottom: 20px;
         left: 10px;
     }
     .btn_2{
-        margin-top: 37px;
+        margin-top: 31px;
         padding: 17px 47px;
     }
     .btn_3{
@@ -1116,6 +1117,9 @@ margin-bottom: 20px;
         position: absolute;
         bottom: 30px;
         left: 250px;
+    }
+    .btn_6{
+        padding: 15px 38px;
     }
     /*-----/btn-----*/
 
@@ -1145,6 +1149,7 @@ margin-bottom: 20px;
     }
     /*-----/hlp-lookup-----*/
 
+    /*-----service-----*/
     .service__wrap{
         margin-top: -23px;
         padding-top: 58px;
@@ -1224,10 +1229,9 @@ margin-bottom: 20px;
         content: '';
     }
     .through__item{
-        width: 29%;
+        width: 28%;
         display: inline-block;
         vertical-align: top;
-        text-align: left;
     }
     .through__pic{
         height: 120px;
@@ -1266,7 +1270,7 @@ margin-bottom: 20px;
 
     /*-----hlr-what-----*/
     .sms-what{
-        padding: 35px 10px;
+        padding: 0 10px;
     }
     .sms-what__pic {
         display: inline-block;
@@ -1284,7 +1288,7 @@ margin-bottom: 20px;
 
     /*-----sms-best-----*/
     .sms-best {
-        padding: 80px 10px 19px;
+        padding: 60px 10px 19px;
     }
     .sms-best__item{
         display: inline-block;
@@ -1306,6 +1310,7 @@ margin-bottom: 20px;
         display: inline-block;
         vertical-align: top;
         width: 46%;
+        height: 303px;
         margin-right: 7%;
         margin-bottom: 60px;
         overflow: hidden;
@@ -1314,11 +1319,15 @@ margin-bottom: 20px;
         margin-right: 0;
     }
     .mass-mailing__wrap{
-        margin-top: 73px;
+        margin-top: 71px;
         text-align: left;
     }
     .mass-mailing .btn{
         margin-top: -11px;
+    }
+    .mass-mailing__item:hover .mass-mailing__hover{
+        opacity: 1;
+        visibility: visible;
     }
      /*-----/mass-mailing-----*/
 
@@ -1341,7 +1350,7 @@ margin-bottom: 20px;
 
     /*-----our-service-----*/
     .our-service{
-        padding-top: 56px;
+        padding-top: 52px;
     }
     .our-service__wrap{
         padding: 31px 10px 43px;
@@ -1385,43 +1394,49 @@ margin-bottom: 20px;
     .get-promo__title{
         width: 60%;
         font-size: 58px;
-        line-height: 65px;
+        line-height: 67px;
         margin-bottom: 10px;
     }
     .get-promo__wrap{
         padding-top: 74px;
-        background-size: 549px 354px;
-        background-position: 196% 100%;
+        background-size: 450px 370px;
+        background-position: 107% 100%;
     }
-    .get-promo__wrap p{
+    .get-promo__wrap h3{
         width: 60%;
     }
     /*-----/get-promo-----*/
 
     /*-----advantages-----*/
+    .advantages {
+        padding-top: 0;
+    }
     .advantages__wrap {
-        padding: 60px 10px 43px;
+        padding: 40px 10px 43px;
     }
     /*-----/advantages-----*/
 
     /*-----advantages-description-----*/
     .advantages-description{
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
     .advantages-description__wrap {
-        padding: 40px 10px 43px;
+        padding: 0 10px 22px;
     }
     .advantages-description__wrap li {
         position: relative;
         padding-left: 20px;
         font-size: 22px;
-        line-height: 40px;
+        line-height: 50px;
+    }
+    .advantages-description .btn{
+        padding: 15px 41px;
     }
     /*-----/advantages-description-----*/
 
     /*-----need-gateway-----*/
     .need-gateway {
-        padding: 55px 10px 20px;
+        padding: 54px 10px 20px;
     }
     .need-gateway__pic {
         width: 75px;
@@ -1433,7 +1448,7 @@ margin-bottom: 20px;
         width: calc(100% - 100px);
     }
     .need-gateway__description h3 {
-        margin-bottom: 3px;
+        margin-bottom: 12px;
         font-size: 16px;
     }
     .need-gateway__description span {
@@ -1457,17 +1472,21 @@ margin-bottom: 20px;
         background-size: 240px 280px;
         background-position: 10px 60px;
     }
+    .platform .site__title {
+        margin-bottom: 29px;
+    }
     /*-----/platform-----*/
 
     /*-----test-delivery-----*/
     .test-delivery{
-        padding: 60px 10px 40px;
+        padding: 40px 10px 0;
     }
     .test-delivery__item{
         width: 20%;
+        line-height: 21px;
     }
     .test-delivery__pic{
-        margin-bottom: 22px;
+        margin-bottom: 15px;
     }
     /*-----/test-delivery-----*/
 
@@ -1480,30 +1499,39 @@ margin-bottom: 20px;
         float: none;
         display: inline-block;
         vertical-align: middle;
-        margin: 0 33px 10px 0;
+        margin: 0 37px 10px 0;
     }
     .help-stage__wrap div{
         display: inline-block;
         vertical-align: middle;
-        width: calc(100% - 150px);
+        width: calc(100% - 160px);
+        padding-top: 15px;
         font-size: 16px;
-        line-height: 22px;
+        line-height: 24px;
     }
     /*-----/help-stage-----*/
 
     /*-----check-in-----*/
     .check-in__wrap {
-        min-height: 100px;
-        padding: 41px 10px 44px 10px;
+        padding: 35px 10px 36px 10px;
     }
     .check-in__wrap span {
         width: inherit;
+    }
+    .check-in__wrap .btn{
+        padding: 15px 64px;
+        margin-right:30px;
+        margin-left: 22px;
+    }
+    .check-in__wrap .btn_6{
+        padding: 15px 39px;
+        margin-left: 30px;
     }
     /*-----/check-in-----*/
 }
 @media (min-width: 920px) {
 
-    /*-----/hlr-promo-----*/
+    /*-----hlr-promo-----*/
     .hlr-promo__wrap{
         max-width: 1500px;
         margin: 0 auto;
@@ -1513,7 +1541,7 @@ margin-bottom: 20px;
 
     /*-----register-----*/
     .register__wrap {
-        padding: 57px 10px 40px 285px;
+        padding: 54px 10px 40px 285px;
     }
     .register__pic{
         position: absolute;
@@ -1547,11 +1575,14 @@ margin-bottom: 20px;
         padding: 20px 10px 20px 20px;
     }
     /*-----/our-service-----*/
+
+    /*-----write-----*/
     .write .btn{
         padding: 14px 46px;
     }
+    /*-----/write-----*/
 
-    /*-----/get-promo-----*/
+    /*-----get-promo-----*/
     .get-promo__wrap{
         max-width: 1500px;
         margin: 0 auto;
@@ -1579,6 +1610,18 @@ margin-bottom: 20px;
     }
     /*-----/need-gateway-----*/
 
+    /*-----check-in-----*/
+    .check-in__wrap .btn{
+        padding: 15px 64px;
+        margin-right:53px;
+        margin-left: 22px;
+    }
+    .check-in__wrap .btn_6{
+        padding: 15px 39px;
+        margin-left: 58px;
+    }
+    /*-----/check-in-----*/
+
 }
 @media (min-width: 1200px) {
 
@@ -1589,15 +1632,15 @@ margin-bottom: 20px;
     .hlr-promo__title {
         font-size: 65px;
     }
-    .hlr-promo__wrap p {
-        width: 69%;
+    .hlr-promo__wrap h3 {
+        width: 70%;
     }
     /*-----/hlr-promo__wrap-----*/
 
     /*-----who-needs-----*/
     .who-needs__wrap{
         max-width: 1186px;
-        padding: 60px 350px 46px 136px;
+        padding: 52px 350px 46px 136px;
     }
     /*-----/who-needs-----*/
 
@@ -1607,14 +1650,15 @@ margin-bottom: 20px;
          left: 1px;
      }
     .btn_5 {
-        bottom: 28px;
-        left: 250px;
+        bottom: 76px;
+        left: 379px;
+        padding: 17px 29px;
     }
     /*-----/btn-----*/
 
     /*-----hlp-lookup-----*/
     .hlp-lookup{
-        padding: 60px 10px 0;
+        padding: 56px 10px 0;
     }
     .hlp-lookup__pic {
         width: 549px;
@@ -1627,39 +1671,40 @@ margin-bottom: 20px;
         vertical-align: top;
         margin-left: -12px;
     }
+    .hlp-lookup .site__title {
+        margin-bottom: 25px;
+    }
     /*-----/hlp-lookup-----*/
 
     /*-----service-----*/
     .service__wrap {
         margin-top: -23px;
-        padding: 57px 45px 9px 0;
+        padding: 61px 45px 9px 0;
     }
     /*-----/service-----*/
 
     /*-----hlr-what-----*/
     .hlr-what {
-        padding: 41px 0;
+        padding: 39px 0;
     }
     /*-----/hlr-what-----*/
 
-    /*-----/hlr-what-----*/
-
+    /*-----register-----*/
     .register__pic {
         left: 2px;
     }
     .register .site__title{
         margin-bottom: 32px;
     }
-    /*-----/hlr-what-----*/
+    /*-----/register-----*/
 
     /*-----relive-----*/
     .relive .site__title{
         margin-bottom: 32px;
     }
-
     .relive__wrap {
         min-height: 350px;
-        padding: 60px 380px 40px 0;
+        padding: 55px 380px 40px 0;
     }
     .relive__pic {
         right: 142px;
@@ -1668,10 +1713,16 @@ margin-bottom: 20px;
 
     /*-----through-----*/
     .through {
-        padding: 58px 0 0;
+        padding: 52px 0 0;
     }
     .through .site__title {
         margin-bottom: 34px;
+    }
+    .through__pic {
+        margin-left: 0;
+    }
+    .through__item {
+        text-align: left;
     }
     /*-----/through-----*/
 
@@ -1683,7 +1734,7 @@ margin-bottom: 20px;
 
     /*-----sms-what-----*/
     .sms-what {
-        padding: 16px 0;
+        padding: 13px 0 20px;
     }
     .sms-what__wrap {
         padding: 20px 0;
@@ -1700,13 +1751,13 @@ margin-bottom: 20px;
 
     /*-----sms-best-----*/
     .sms-best {
-        padding: 80px 0 19px;
+        padding: 80px 0 20px;
     }
     /*-----/sms-best-----*/
 
     /*-----mass-mailing-----*/
     .mass-mailing {
-        padding: 58px 0 51px;
+        padding: 54px 0 51px;
     }
     .mass-mailing .site__title{
         margin-bottom: 38px;
@@ -1718,7 +1769,7 @@ margin-bottom: 20px;
 
     /*-----clients----*/
     .clients {
-        padding: 59px 0 70px;
+        padding: 56px 0 70px;
     }
     .clients__wrap {
         padding: 20px 90px 0;
@@ -1743,51 +1794,91 @@ margin-bottom: 20px;
 
     /*-----get-promo-----*/
     .get-promo__wrap {
-        background-position: 861px 100%;
+        background-position: 655px 53%;
+        background-size: 891px 508px;
     }
     .get-promo__title {
         font-size: 65px;
     }
-    .get-promo__wrap p {
+    .get-promo__wrap h3 {
         width: 69%;
+    }
+    .get-promo .btn_1 {
+        bottom: 71px;
+        padding: 17px 55px;
+    }
+    .get-promo .btn_5{
+        bottom: 71px;
     }
     /*-----/get-promo-----*/
 
     /*-----platform-----*/
     .platform {
-        padding: 60px 60px 40px 515px;
+        padding: 73px 114px 74px 517px;
         background-size: 480px 561px;
         background-position: 0 60px;
     }
     /*-----/platform-----*/
 
     /*-----test-delivery-----*/
+    .test-delivery__wrap {
+        padding: 20px 0 2px;
+    }
     .test-delivery {
-        padding: 58px 0 0;
+        padding: 54px 0 0;
     }
     .test-delivery .site__title {
-        margin-bottom: 34px;
+        margin-bottom: 20px;
     }
     .test-delivery__item {
-        width: 15%;
+        width: 23%;
+        padding-right: 60px;
+        line-height: 21px;
+        text-align: left;
     }
     /*-----/test-delivery-----*/
 
     /*-----help-stage-----*/
     .help-stage {
-        padding: 41px 0;
+        padding: 53px 0;
+    }
+    .help-stage .site__title{
+        margin-bottom: 32px;
     }
     /*-----/help-stage-----*/
 
     /*-----need-gateway-----*/
+    .need-gateway {
+        padding: 54px 0 15px;
+    }
     .need-gateway__pic {
         width: 90px;
     }
     .need-gateway__description {
-        width: calc(100% - 140px);
+        width: calc(100% - 135px);
+    }
+    .need-gateway__service {
+        width: 46.4%;
+    }
+    .need-gateway__advertising {
+        width: 45.4%;
     }
     /*-----/need-gateway-----*/
 
+    /*-----advantages-----*/
+    .advantages__wrap {
+        padding: 40px 0 36px;
+    }
+    /*-----/advantages-----*/
+    .test-delivery__pic {
+        margin-left: 0;
+    }
+
+    /*-----advantages-description-----*/
+    .advantages-description__wrap {
+        padding: 0 6px 23px;
+    }
+    /*-----/advantages-description-----*/
 }
 @media screen and (max-width: 880px){
     .site-footer {
