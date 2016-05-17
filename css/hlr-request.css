@@ -50,6 +50,9 @@
     line-height: 30px;
     color:#fff;
 }
+.promo-2fa{
+    background: #65b0e6 no-repeat center;
+}
 .hlr-promo__wrap{
     position: relative;
     height: 376px;
@@ -992,7 +995,7 @@
     content: '';
 }
 .test-delivery__item{
-    width: 45%;
+    width: 48%;
     display: inline-block;
     vertical-align: top;
     margin-bottom: 30px;
@@ -1385,6 +1388,9 @@
     .clients_next, .clients_prev {
         width: 30px;
     }
+    .clients_2fa .clients__wrap{
+        padding: 20px 40px 40px;
+    }
     /*-----/clients-----*/
 
     /*-----get-promo-----*/
@@ -1487,6 +1493,10 @@
     }
     .test-delivery__pic{
         margin-bottom: 15px;
+    }
+    .test-delivery_2fa .test-delivery__item{
+        width: 29%;
+        margin-bottom: 50px;
     }
     /*-----/test-delivery-----*/
 
@@ -1835,6 +1845,10 @@
         padding-right: 60px;
         line-height: 21px;
         text-align: left;
+    }
+    .test-delivery_2fa .test-delivery__item{
+        width: 30%;
+        margin-bottom: 60px;
     }
     /*-----/test-delivery-----*/
 
