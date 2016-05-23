@@ -3,6 +3,10 @@ $(function(){
     $('.swiper-container').each(function () {
         Slider($(this));
     });
+
+    if( $('#wpadminbar').length){
+        $('.site-content').css("padding-top", 123)
+    }
 } );
 
 var Slider = function (obj) {
