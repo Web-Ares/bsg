@@ -24,6 +24,7 @@
     line-height: 24px;
 }
 .site__title{
+    display: block;
     margin-bottom: 30px;
     color: #65b0e6;
     font-size: 25px;
@@ -66,7 +67,8 @@
     height: 100%;
     margin: 0 auto;
 }
-.hlr-promo__wrap h3{
+.hlr-promo__text{
+    display: block;
     width: 60%;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -74,8 +76,10 @@
 .hlr-promo__title{
     font-size: 35px;
     margin-bottom: 20px;
+    padding: 0;
     text-transform: uppercase;
     font-weight: 600;
+    color: #fff;
     letter-spacing: -1.6px;
 }
 .hlp-lookup{
@@ -104,7 +108,7 @@
     line-height: 33px;
     letter-spacing: 0;
 }
-.promo-2fa .hlr-promo__wrap h3 {
+.promo-2fa .hlr-promo__text {
     width: 100%;
 }
 .promo-2fa .btn{
@@ -347,7 +351,7 @@
     background-position: 50% 100%;
 
 }
-.sms-promo__wrap h3{
+.sms-promo__sub-title{
     margin-bottom: 5px;
     text-transform: uppercase;
 }
@@ -362,6 +366,7 @@
     margin-bottom: 5px;
     text-transform: uppercase;
     font-weight: 600;
+    color: #fff;
     letter-spacing: -1.6px;
 }
 /*-----/sms-promo-----*/
@@ -467,7 +472,7 @@
     margin-right: 5px;
     text-align: center;
 }
-.mass-mailing__name h3{
+.mass-mailing__title{
     display: inline-block;
     vertical-align: middle;
     width: 70%;
@@ -718,6 +723,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 600;
+    color: #fff;
     letter-spacing: -1.6px;
 }
 /*-----/get-promo-----*/
@@ -905,7 +911,13 @@
     color: #65b0e6;
     text-transform: uppercase;
 }
-.need-gateway__description span{
+.need-gateway__name{
+    display: block;
+    font-size: 14px;
+    color: #65b0e6;
+    text-transform: uppercase;
+}
+.need-gateway__text{
     display: block;
     color: #195b8a;
     font-size: 14px;
@@ -1174,7 +1186,7 @@
     .promo-2fa .btn_1 {
 
     }
-    .promo-2fa .hlr-promo__wrap h3 {
+    .promo-2fa .sms-promo__sub-title {
         width: 58%;
     }
     /*-----/hlr-promo-----*/
@@ -1354,7 +1366,8 @@
     .sms-promo .btn_1 {
         bottom: 62px;
     }
-    .sms-promo__wrap h3 {
+    .sms-promo__sub-title {
+        display: block;
         margin-bottom: 31px;
         font-size: 30px;
         letter-spacing: 1.4px;
@@ -1547,7 +1560,11 @@
         margin-bottom: 12px;
         font-size: 16px;
     }
-    .need-gateway__description span {
+    .need-gateway__name{
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+    .need-gateway__text {
         font-size: 14px;
     }
     .need-gateway__service {
@@ -1771,8 +1788,8 @@
     .hlr-promo__title {
         font-size: 65px;
     }
-    .hlr-promo__wrap h3 {
-        width: 60%;
+    .hlr-promo__wrap .sms-promo__sub-title {
+        width: 65%;
     }
     .promo-2fa .hlr-promo__wrap {
         padding-top: 67px;
@@ -1789,7 +1806,7 @@
         line-height: 79px;
         letter-spacing: -1px;
     }
-    .promo-2fa .hlr-promo__wrap h3 {
+    .promo-2fa .hlr-promo__wrap .sms-promo__sub-title {
         width: 75%;
     }
     .promo-2fa .btn_1 {
