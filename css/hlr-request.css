@@ -720,7 +720,6 @@
 }
 .get-promo__title{
     font-size: 35px;
-    margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 600;
     color: #fff;
@@ -1360,7 +1359,7 @@
         background-position: 100% 100%;
     }
     .sms-promo__wrap p{
-        width: 45%;
+        width: 50%;
         font-size: 16px;
     }
     .sms-promo .btn_1 {
@@ -1368,6 +1367,7 @@
     }
     .sms-promo__sub-title {
         display: block;
+        width: 60%;
         margin-bottom: 31px;
         font-size: 30px;
         letter-spacing: 1.4px;
@@ -1507,7 +1507,7 @@
         margin-bottom: 10px;
     }
     .get-promo__wrap{
-        padding-top: 74px;
+        padding-top: 36px;
         background-size: 450px 370px;
         background-position: 100% 100%;
     }
@@ -2078,6 +2078,11 @@
         padding: 0 6px 23px;
     }
     /*-----/advantages-description-----*/
+
+    .sms-promo__wrap p {
+        width: 44%;
+    }
+
 }
 @media screen and (max-width: 880px){
     .site-footer {
